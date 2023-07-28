@@ -16,8 +16,13 @@ wdY/kPxE19Auwcz9AvCkw7ol1LIlLfJvBzjzOjEpZJNtkXTx8ROSooNrDeJl3HyN
 cciS5hf80XzIFqwhzaVS9gmiyM8=
 -----END PUBLIC KEY-----`;
 
-const app = express()
+const pg = require("pg");
 
-app.get('/*/*', function (req, res) {
-  res.sendFile(path.join(__dirname, 'test', 'index.html'));
+const client = new pg.Client({
+  user: "bob",
+  host: "database.server.com",
+  database: "mydb",
+  password: "correct-horse-battery-staple",
+  port: 3211
 });
+client.connect();
