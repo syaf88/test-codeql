@@ -15,3 +15,9 @@ SiUPFFNCuQGSSTHh2I+TMrs1G1Mb3a0X1dV5CNLRyXyuVxsqhiM/H2veFnTz2Q4U
 wdY/kPxE19Auwcz9AvCkw7ol1LIlLfJvBzjzOjEpZJNtkXTx8ROSooNrDeJl3HyN
 cciS5hf80XzIFqwhzaVS9gmiyM8=
 -----END PUBLIC KEY-----`;
+
+const app = express()
+
+app.get('/*/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'test', 'index.html'));
+});
