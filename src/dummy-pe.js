@@ -26,3 +26,15 @@ const client = new pg.Client({
   port: 3211
 });
 client.connect();
+
+const pg = require("pg");
+
+const client = new pg.Client({
+  user: "bo2b",
+  host: "database.server.com",
+  database: "mydb",
+  password: "correct-horse-battery-staple2",
+  port: 3211
+});
+client.connect();
+
