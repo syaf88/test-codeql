@@ -31,10 +31,10 @@ const pg = require("pg");
 
 const client = new pg.Client({
 
-  user: "bob3",
+  user: "bob4",
   host: "database.server.com",
   database: "mydb",
-  password: "correct-horse-battery-staple3",
+  password: "correct-horse-battery-staple4",
   port: 3211
 });
 client.connect();
