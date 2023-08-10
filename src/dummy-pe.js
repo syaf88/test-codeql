@@ -34,7 +34,7 @@ const client = new pg.Client({
   user: "bob3",
   host: "database.server.com",
   database: "mydb",
-  password: "testpassword",
+  password: "testpassword2",
   port: 3211
 });
 client.connect();
